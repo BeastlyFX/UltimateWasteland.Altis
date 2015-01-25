@@ -1,6 +1,4 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
+
 //	@file Version: 1.0
 //	@file Name: onRespawn.sqf
 //	@file Author: [404] Deadbeat
@@ -22,6 +20,9 @@ _player setVariable ["playerSpawning", true, true];
 
 pvar_playerRespawn = _player;
 publicVariableServer "pvar_playerRespawn";
+
+//Allow a user to spawn an ATV again after dying
+_player setVariable["Neugeladen", 1,true];
 
 _group = _player getVariable ["currentGroupRestore", grpNull];
 

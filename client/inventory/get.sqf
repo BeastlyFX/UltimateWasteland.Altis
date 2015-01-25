@@ -1,6 +1,4 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
+
 /** Get an Item
  *
  * Returns the actual item definition for a player. Note that this is only a

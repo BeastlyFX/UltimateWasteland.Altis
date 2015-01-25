@@ -1,6 +1,3 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: onKeyPress.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev
@@ -19,7 +16,7 @@ _handled = false;
 switch (true) do
 {
 	// U key
-	case (_key == 22):
+	case (_key == 35):
 	{
 		execVM "client\systems\adminPanel\checkAdmin.sqf";
 	};
@@ -36,6 +33,51 @@ switch (true) do
 	{
 		showPlayerNames = if (isNil "showPlayerNames") then { true } else { !showPlayerNames };
 	};
+	
+    // U Key
+	case (_key == 22):
+	{
+		private ["_uid"];
+		_uid = getPlayerUID player;
+
+		switch (true) do
+		{
+			case ([_uid, serverOwners] call isAdmin || isServer):
+			{
+				deleteVehicle cursorTarget;
+				hint "Vehicle Deleted!";
+			};
+			case (serverCommandAvailable "#kick"):
+			{
+				deleteVehicle cursorTarget;
+				hint "Vehicle Deleted!";
+			};
+		};
+
+	};
+	
+	//Spawn an ATV with Y
+	case (_key == 21):
+    {
+        if(vehicle player != player) exitWith{};
+        _pos = getPos player;
+        _legitim = player getVariable "Neugeladen";
+        if(_legitim == 1) then 
+        {
+            player setVariable["Neugeladen", 0,true];
+            _car = createVehicle ["C_Quadbike_01_F",_pos, [], 0, "CAN_COLLIDE"];
+            _car setVariable ["newVehicle",1,true];
+            _car setVariable ["R3F_LOG_disabled", true];
+            clearMagazineCargoGlobal _car;
+            clearWeaponCargoGlobal _car;
+            clearItemCargoGlobal _car; 
+            _car spawn ATVCleanup;
+        } 
+        else 
+        {
+        hint "You have already spawned an ATV!"
+        };    
+    };
 
 	case (_key in actionKeys "GetOver"):
 	{
@@ -85,7 +127,7 @@ switch (true) do
 			_handled = true;
 		};
 	};
-
+		
 	// Earplugs - End Key
 	case (_key == 207):
 	{

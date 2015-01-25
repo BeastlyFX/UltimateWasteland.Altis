@@ -1,6 +1,4 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
+
 /** The conditional check of the "take" action
  *
  * This code checks to see if the "Take ${item}" action should be displayed.

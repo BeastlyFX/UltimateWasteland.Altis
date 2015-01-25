@@ -1,6 +1,4 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
+
 /** Add items the players inventory
  *
  * simple method that increments the qty of an item in a players inventory

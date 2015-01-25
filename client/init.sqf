@@ -1,6 +1,4 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
+
 //@file Version: 1.1
 //@file Name: init.sqf
 //@file Author: [404] Deadbeat, [GoT] JoSchaap, AgentRev, [KoS] Bewilderbeest
@@ -24,6 +22,9 @@ respawnDialogActive = false;
 groupManagmentActive = false;
 pvar_PlayerTeamKiller = objNull;
 doCancelAction = false;
+
+//Setup ATV Spawning Variables
+player setVariable["Neugeladen", 1,true];
 
 //Initialization Variables
 playerCompiledScripts = false;
@@ -129,9 +130,7 @@ A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 [] spawn playerSpawn;
 
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
-A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 [] execVM "client\functions\drawPlayerIcons.sqf";
-[] execVM "addons\far_revive\FAR_revive_init.sqf";
 [] execVM "addons\camera\functions.sqf";
 
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
