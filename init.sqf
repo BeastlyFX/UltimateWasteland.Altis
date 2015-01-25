@@ -71,3 +71,10 @@ if (isServer) then
 [] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 [] execVM "addons\proving_ground\init.sqf";
 [] execVM "addons\JumpMF\init.sqf";
+
+while {true} do
+{
+	0 setOvercast 0;
+	0 setRain 0;
+	0 setFog 0;
+};

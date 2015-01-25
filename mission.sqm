@@ -71,7 +71,8 @@ class Mission
 		"a3_characters_f_beta",
 		"a3_characters_f_gamma",
 		"a3_characters_f",
-		"A3_Structures_F_EPC_Civ_Accessories"
+		"A3_Structures_F_EPC_Civ_Accessories",
+		"A3_Structures_F_Mil_Helipads"
 	};
 	addOnsAuto[]=
 	{
@@ -87,6 +88,8 @@ class Mission
 		"A3_Structures_F_Civ_Market",
 		"A3_Structures_F_Civ_Camping",
 		"A3_Structures_F_EPC_Civ_Accessories",
+		"A3_Structures_F_Mil_Helipads",
+		"A3_Structures_F_Walls",
 		"a3_map_altis"
 	};
 	randomSeed=14957468;
@@ -2047,7 +2050,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=30;
+		items=57;
 		class Item0
 		{
 			position[]={5892.3325,225.05762,20124.521};
@@ -2380,10 +2383,296 @@ class Mission
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
+		class Item30
+		{
+			position[]={9271.2051,17.010143,21573.426};
+			id=189;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item31
+		{
+			position[]={23149.582,3.1900001,18957.256};
+			id=190;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item32
+		{
+			position[]={26820.021,24.576794,24519.805};
+			id=191;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item33
+		{
+			position[]={21075.004,26.410803,7094.9004};
+			id=192;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item34
+		{
+			position[]={11684.438,23.236137,11940.254};
+			id=193;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item35
+		{
+			position[]={14204.994,17.92,15897.751};
+			id=194;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item36
+		{
+			position[]={3652.4756,7.0106659,13389.123};
+			azimut=-54.676003;
+			id=195;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item37
+		{
+			position[]={14592.816,17.91,16631.24};
+			azimut=-54.676003;
+			id=196;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item38
+		{
+			position[]={14568.927,17.91,16654.637};
+			azimut=-135.53563;
+			id=197;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item39
+		{
+			position[]={14569.537,17.91,16654.072};
+			azimut=-135.53563;
+			id=198;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item40
+		{
+			position[]={14574.74,17.91,16660.674};
+			azimut=-135.53563;
+			id=199;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item41
+		{
+			position[]={14575.353,17.91,16660.123};
+			azimut=-135.53563;
+			id=200;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item42
+		{
+			position[]={23018.842,3.5795579,18875.344};
+			azimut=-51.582081;
+			id=201;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item43
+		{
+			position[]={23020.281,3.512578,18860.066};
+			azimut=-0.88781434;
+			id=202;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item44
+		{
+			position[]={23019.441,3.5126882,18860.023};
+			azimut=-0.88781434;
+			id=203;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item45
+		{
+			position[]={23020.498,3.4864185,18851.688};
+			azimut=-0.88781434;
+			id=204;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item46
+		{
+			position[]={23019.65,3.48875,18851.633};
+			azimut=-0.88781434;
+			id=205;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item47
+		{
+			position[]={26746.168,20.599621,24609.135};
+			azimut=-54.676003;
+			id=206;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item48
+		{
+			position[]={26756.951,20.955914,24622.443};
+			azimut=-139.47264;
+			id=207;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item49
+		{
+			position[]={26757.598,21.019945,24621.941};
+			azimut=-139.47264;
+			id=208;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item50
+		{
+			position[]={26762.324,20.955088,24628.873};
+			azimut=-139.47264;
+			id=209;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item51
+		{
+			position[]={26762.969,21.025009,24628.367};
+			azimut=-139.47264;
+			id=210;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item52
+		{
+			position[]={20779.398,29.180601,7216.3486};
+			azimut=-54.676003;
+			id=211;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			leader=1;
+			lock="UNLOCKED";
+			skill=1;
+			init="light = ""#lightpoint"" createVehicleLocal position this;  light setLightBrightness 0.045;  light setLightAmbient[0.0, 0.0, 0.0];  light setLightColor[2.0, 2.0, 0.0];  light lightAttachObject [this, [0,0,0.1]];  ";
+		};
+		class Item53
+		{
+			position[]={20713.645,29.475157,7258.752};
+			azimut=-127.38967;
+			id=212;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item54
+		{
+			position[]={20714.172,29.510284,7258.1147};
+			azimut=-127.38967;
+			id=213;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item55
+		{
+			position[]={20720.258,28.974339,7263.9067};
+			azimut=-127.38967;
+			id=214;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
+		class Item56
+		{
+			position[]={20720.791,28.988424,7263.2637};
+			azimut=-127.38967;
+			id=215;
+			side="EMPTY";
+			vehicle="Land_CncBarrierMedium4_F";
+			skill=0.60000002;
+			init="this setVariable [""R3F_LOG_disabled"", true];";
+		};
 	};
 	class Markers
 	{
-		items=174;
+		items=191;
 		class Item0
 		{
 			position[]={3612.1487,12.11851,13020.892};
@@ -3701,6 +3990,386 @@ class Mission
 			name="VehStore5_seaSpawn";
 			type="Empty";
 			colorName="ColorBlack";
+		};
+		class Item174
+		{
+			position[]={9271.0381,17.010654,21573.777};
+			name="RearmPad_1";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item175
+		{
+			position[]={23149.414,3.1900001,18957.607};
+			name="RearmPad_1_1";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item176
+		{
+			position[]={26819.854,24.570406,24520.156};
+			name="RearmPad_1_2";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item177
+		{
+			position[]={21074.836,26.402027,7095.252};
+			name="RearmPad_1_3";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item178
+		{
+			position[]={11684.27,23.236496,11940.605};
+			name="RearmPad_1_4";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item179
+		{
+			position[]={14204.826,17.92,15898.103};
+			name="RearmPad_1_5";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-359.19601;
+		};
+		class Item180
+		{
+			position[]={3652.6309,7.0150967,13388.898};
+			name="RearmPad_2_2";
+			type="b_maint";
+			colorName="ColorRed";
+		};
+		class Item181
+		{
+			position[]={14592.972,17.91,16631.016};
+			name="RearmPad_2_3";
+			type="b_maint";
+			colorName="ColorRed";
+		};
+		class Item182
+		{
+			position[]={14572.049,17.91,16657.355};
+			name="RearmPad_2_1_1";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-124.77957;
+		};
+		class Item183
+		{
+			position[]={23018.982,3.5773778,18875.111};
+			name="RearmPad_2";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=3.0939405;
+		};
+		class Item184
+		{
+			position[]={23020.01,3.4970751,18855.932};
+			name="RearmPad_2_1";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=9.8682823;
+		};
+		class Item185
+		{
+			position[]={26746.322,20.610842,24608.91};
+			name="RearmPad_2_4";
+			type="b_maint";
+			colorName="ColorRed";
+		};
+		class Item186
+		{
+			position[]={26759.885,21.014843,24625.363};
+			name="RearmPad_2_1_2";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-128.71661;
+		};
+		class Item187
+		{
+			position[]={20779.553,29.180286,7216.124};
+			name="RearmPad_2_5";
+			type="b_maint";
+			colorName="ColorRed";
+		};
+		class Item188
+		{
+			position[]={20717.131,29.223507,7261.0112};
+			name="RearmPad_2_1_3";
+			type="b_maint";
+			colorName="ColorRed";
+			angle=-116.6336;
+		};
+		class Item189
+		{
+			position[]={19800.273,74.218391,6348.6621};
+			name="Wind Power District";
+			text="Wind Power District";
+			type="loc_PowerWind";
+			colorName="ColorBlue";
+		};
+		class Item190
+		{
+			position[]={21895.115,0,6224.4067};
+			name="Wind Power District_1";
+			text="Wave Power District";
+			type="loc_PowerWave";
+			colorName="ColorBlue";
+		};
+	};
+	class Sensors
+	{
+		items=15;
+		class Item0
+		{
+			position[]={9271.0078,17.009212,21573.457};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={23149.383,3.1900001,18957.287};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={26819.822,24.576387,24519.836};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={21074.805,26.410805,7094.9316};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={11684.238,23.238619,11940.285};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={14204.795,17.92,15897.782};
+			a=10;
+			b=10;
+			angle=643.99799;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reloadJets.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={3652.5713,7.012938,13388.969};
+			a=7;
+			b=7;
+			angle=589.32239;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={14592.912,17.91,16631.086};
+			a=7;
+			b=7;
+			angle=589.32239;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={14572.073,17.91,16657.549};
+			a=4;
+			b=3;
+			angle=134.38246;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={23020.15,3.49667,18855.783};
+			a=4;
+			b=3;
+			angle=269.0303;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={23018.922,3.5782299,18875.195};
+			a=7;
+			b=7;
+			angle=592.4165;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={26759.877,21.002104,24625.57};
+			a=4;
+			b=3;
+			angle=130.44557;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={26746.264,20.606741,24608.98};
+			a=7;
+			b=7;
+			angle=589.32239;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={20717.174,29.209278,7261.1768};
+			a=4;
+			b=3;
+			angle=142.52844;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""LandVehicle"" countType thislist  > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item14
+		{
+			position[]={20779.494,29.180428,7216.1943};
+			a=7;
+			b=7;
+			angle=589.32239;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="(""Air"" countType thislist > 0) && ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= (thislist select 0) execVM ""scripts\x_reload.sqf"";";
+			class Effects
+			{
+			};
 		};
 	};
 };
